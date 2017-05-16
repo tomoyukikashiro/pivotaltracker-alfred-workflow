@@ -517,7 +517,7 @@ else:
 def make_item(s):
 	return {
 		'title': s['name'],
-		'subtitle': 'STATUS: {}  /  LABLES: {}'.format(s['current_state'], ', '.join([ l['name'] for l in s['labels']])),
+		'subtitle': 'STATUS: {}  /  LABELS: {}'.format(s['current_state'], ', '.join([ l['name'] for l in s['labels']])),
 		'arg': s['id'],
 		'icon': {'type': 'default', 'path': '{}.png'.format(s['story_type'])},
 		'autocomplete': '{} {}'.format(s['name'], s['story_type']),
